@@ -1,8 +1,16 @@
 # ARES
 
-The flagship demo game from [docs/specs/16-ares-demo.md](../../docs/specs/16-ares-demo.md): a fast first-person
-arena boss rush in Godot 4, where the bosses are members of the Nous Hermes hackathon Discord and Jev plays it.
-Hand-coded, not studio-generated.
+**Play it in a browser: <https://pukujan.github.io/ares/web/>** (the web build, served by GitHub Pages).
+
+The flagship demo game from `docs/specs/16-ares-demo.md` in [Pukujan/swarm-studio](https://github.com/Pukujan/swarm-studio):
+a fast first-person arena boss rush in Godot 4, where the bosses are members of the Nous Hermes hackathon
+Discord and Jev plays it. Hand-coded, not studio-generated.
+
+It lived at `games/ares/` in that repository until 2026-11-16, when it moved here so that everyone
+installing the Swarm Studio plugin stopped downloading 164 MB of one demo game (owner, 2026-11-15). The
+history came with it: `git subtree split --prefix=games/ares` kept all 23 commits. The Studio still reads a
+few of these files — the config shape (`data/heroes.json`), the sheet cutter (`tools/sheets/cut.py`), the
+remixable plan (`plan.json`) and a few backdrops and faces — and it keeps its own copies in `gamemaker/`.
 
 ## Run (Windows PC, Godot 4.7)
 
